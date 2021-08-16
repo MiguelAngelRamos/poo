@@ -4,9 +4,9 @@ public class Vehiculo {
 	// private solo es accesible dentro de la clase (Vehiculo)
 	private String marca;
 	private String modelo;
-	private float precio;
+	private int precio;
 	
-	public Vehiculo(String marca, String modelo, float precio) {
+	public Vehiculo(String marca, String modelo, int precio) {
 		// super();
 		this.marca = marca;
 		this.modelo = modelo;
@@ -14,10 +14,10 @@ public class Vehiculo {
 	}
 
 	// por medio del metodo de acceso publico retorno el contenido de la variable private precio
-	public float getPrecio() {
+	public int getPrecio() {
 		return precio;
 	}
-
+    
 	//@Override
 	// public String toString() {
 	//	return "Vehiculo [marca=" + marca + ", modelo=" + modelo + ", precio=" + precio + "]";
@@ -27,7 +27,6 @@ public class Vehiculo {
 		return "Marca: " + marca + "\nModelo: " + modelo + "\nPrecio: $" + precio + "\n";
 	}
 	
-
-
+	
 	
 }
